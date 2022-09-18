@@ -19,5 +19,5 @@ export function Profile({ data: { username, tag, location, avatar, stats } }) {
 }
 
 Profile.propTypes = {
-  user: PropTypes.shape({}),
+  data: PropTypes.shape({}),
 };

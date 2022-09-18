@@ -17,10 +17,7 @@ export function Stats({ stats }) {
   );
 }
 
-Stats.propTypes = {
-  stats: PropTypes.exact({
-    followers: PropTypes.number.isRequired,
-    views: PropTypes.number.isRequired,
-    likes: PropTypes.number.isRequired,
-  }),
-};
+// Stats.propTypes = {
+//   stats: PropTypes.exact({
+//   }),
+// };

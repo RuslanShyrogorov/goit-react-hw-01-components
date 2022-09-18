@@ -1,5 +1,5 @@
 import { FriendCards } from './FriendList.styled';
-import { infoFriend } from './FriendListItem/FriendListItem';
+import { InfoFriend } from './FriendListItem/FriendListItem';
 
 export function FriendList({ friends }) {
   return (
@@ -7,7 +7,7 @@ export function FriendList({ friends }) {
       {friends.map(friend => {
         const { avatar, name, isOnline, id } = friend;
         return (
-          <infoFriend
+          <InfoFriend
             key={id}
             avatar={avatar}
             name={name}

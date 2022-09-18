@@ -1,16 +1,16 @@
 import {
-  friendItem,
-  friendStatus,
-  friendAvatar,
-  friendName,
+  FriendItem,
+  FriendStatus,
+  FriendAvatar,
+  FriendName,
 } from './FriendListItem.styled';
 
-export function infoFriend({ avatar, name, isOnline }) {
+export function InfoFriend({ avatar, name, isOnline }) {
   return (
-    <friendItem>
-      <friendStatus userOnline={isOnline}></friendStatus>
-      <friendAvatar src={avatar} alt="User avatar" width="48" />
-      <friendName>{name}</friendName>
-    </friendItem>
+    <FriendItem>
+      <FriendStatus userOnline={isOnline}></FriendStatus>
+      <FriendAvatar src={avatar} alt="User avatar" width="48" />
+      <FriendName>{name}</FriendName>
+    </FriendItem>
   );
 }
