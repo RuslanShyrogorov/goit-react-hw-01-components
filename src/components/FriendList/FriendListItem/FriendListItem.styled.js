@@ -19,8 +19,7 @@ export const FriendStatus = styled.span`
   height: 15px;
   margin-right: 5px;
   border-radius: 50%;
-
-  /* background-color: ${p => (p.userOnline ? 'green' : 'red')}; */
+  background-color: ${p => (p.userOnline ? 'green' : 'red')};
 `;
 
 export const FriendAvatar = styled.img`

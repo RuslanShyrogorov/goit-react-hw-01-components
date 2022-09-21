@@ -17,7 +17,6 @@ export function Stats({ stats }) {
   );
 }
 
-// Stats.propTypes = {
-//   stats: PropTypes.exact({
-//   }),
-// };
+Stats.propTypes = {
+  stats: PropTypes.exact({}),
+};

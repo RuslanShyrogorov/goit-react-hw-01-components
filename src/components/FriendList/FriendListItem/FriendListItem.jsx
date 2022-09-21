@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import {
   FriendItem,
   FriendStatus,
@@ -14,3 +15,10 @@ export function InfoFriend({ avatar, name, isOnline }) {
     </FriendItem>
   );
 }
+
+InfoFriend.propTypes = {
+  userOnline: PropTypes.bool,
+  avatar: PropTypes.string.isRequired,
+  name: PropTypes.string.isRequired,
+  isOnline: PropTypes.bool.isRequired,
+};

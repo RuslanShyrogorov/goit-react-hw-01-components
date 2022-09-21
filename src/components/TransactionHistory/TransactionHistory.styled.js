@@ -8,6 +8,7 @@ export const Table = styled.table`
   border-radius: 4px;
   margin-left: auto;
   margin-right: auto;
+  border: 1px solid black;
 `;
 
 export const TableHead = styled.thead`
@@ -15,12 +16,17 @@ export const TableHead = styled.thead`
   text-transform: uppercase;
 `;
 
-export const HeadRow = styled.tr``;
+export const Row = styled.tr``;
 
-export const HeadColumn = styled.tr``;
+export const HeadColumn = styled.th`
+  border: 1px solid black;
+  background-color: aqua;
+`;
 
 export const TableBody = styled.tbody``;
 
-export const BodyRow = styled.tr``;
+// export const BodyRow = styled.tr``;
 
-export const BodyRowCell = styled.td``;
+export const BodyRowCell = styled.td`
+  border: 1px solid black;
+`;

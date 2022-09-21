@@ -5,8 +5,8 @@ import { Item, Label, Percentage } from './StatItem.styled';
 export function StatItem({ label, percentage }) {
   return (
     <Item>
-      <Label>{`${label} `}</Label>
-      <Percentage>{`${percentage} %`}</Percentage>
+      <Label>{label}</Label>
+      <Percentage>{`${percentage}%`}</Percentage>
     </Item>
   );
 }

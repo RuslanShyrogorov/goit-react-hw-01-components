@@ -4,7 +4,6 @@ import { Description } from './Description/Description';
 import { Stats } from './Stats/Stats';
 
 export function Profile({ data: { username, tag, location, avatar, stats } }) {
-  console.log(username);
   return (
     <UserCard>
       <Description

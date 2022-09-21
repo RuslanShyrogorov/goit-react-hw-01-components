@@ -1,3 +1,4 @@
+import PropTypes from 'prop-types';
 import { FriendCards } from './FriendList.styled';
 import { InfoFriend } from './FriendListItem/FriendListItem';
 
@@ -18,3 +19,14 @@ export function FriendList({ friends }) {
     </FriendCards>
   );
 }
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(
+    PropTypes.exact({
+      avatar: PropTypes.string.isRequired,
+      name: PropTypes.string.isRequired,
+      isOnline: PropTypes.bool.isRequired,
+      id: PropTypes.number.isRequired,
+    })
+  ),
+};
